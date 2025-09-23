@@ -1,0 +1,162 @@
+#image{
+    height: 100%;
+ 
+    grid-column: 6 / 11;
+    grid-row: 1 / 16;
+
+}
+
+@media screen and (max-width: 900px) {
+  #image {
+    height: 100%;
+    grid-column: 1 / 7∏;
+    grid-row: 3/ 4;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+
+
+
+
+#main {
+       height: 100vh;
+       background-image: url("images/bg-pattern-desktop.svg");
+       background-size: 100%;
+    
+}
+#myGrid{
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /*viewport width*/
+    grid-template-rows: repeat(15, 1fr);
+}
+
+
+#text1{
+    height: 100%;
+  
+    grid-column: 2 / 4;
+    grid-row: 4/ 6;
+    font-family: "Josefin Sans", sans-serif;
+    
+    font-size: 40px;
+    color: hsl(0, 36%, 70%);
+
+
+}
+#text2{
+    height: 100%;
+    
+    grid-column: 2 / 4;
+    grid-row: 5/ 7;
+    font-family: "Josefin Sans", sans-serif;
+    
+    font-size: 40px;
+
+
+
+}
+#text3{
+    height: 100%;
+    
+    grid-column: 2 / 4;
+    grid-row: 6/ 8;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+
+
+
+}
+#baseApparel{
+    display: flex;
+     height: 50%;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-items: center;
+   
+}
+#images{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;    /* cover : remplit et recadre si besoin */
+  object-position: center; /* position du recadrage */
+  display: block;
+}
+#paragraphe
+{
+     grid-column: 2 / 5;
+    grid-row: 8/ 11;
+    font-size: 16px;
+      color: hsl(0, 36%, 70%);
+}
+#adresse{
+    
+     grid-column: 2 / 5;
+    grid-row: 11/ 12;
+    width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+
+  
+}
+#email{
+    width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: transparent;
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+    
+}
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+
+}
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+#adresse  { display:inline-flex; align-items:center; gap:.5rem; }
+input { padding:.6rem .8rem; border:1px solid #ccc; border-radius:6px; }
+input:valid{ border-color: #2ecc71; }
+input:invalid:not(:placeholder-shown){ border-color:#e74c3c; }
+
+/* Message texte auto */
+.state::after{ content:""; font-weight:600; }
+input:valid + .state::after{ content:"ok"; color:#2ecc71; }
+input:invalid:not(:placeholder-shown) + .state::after{ content:"faux"; color:#e74c3c; }

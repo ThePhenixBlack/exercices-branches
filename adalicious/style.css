@@ -1,0 +1,25 @@
+#container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#buttonCuisine{
+    background-color: black;
+    color: white;
+}
+
+
+#main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+    font-size: 3em;
+}
+#legumes{
+    font-size: 3em;
+    
+}
