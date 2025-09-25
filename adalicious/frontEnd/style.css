@@ -1,0 +1,149 @@
+body{
+    background-image: url('images/burger.jpg');
+}
+
+#container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#buttonCuisine{
+    background-color: black;
+    color: white;
+}
+
+
+#main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+    font-size: 3em;
+    
+}
+#titre {
+    text-align: center;
+     font-family: 'Chewy', cursive;
+     color: #F77F00;
+      text-shadow:
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+     
+
+  
+    
+}
+#legumes{
+    font-size: 3em;
+    
+}
+
+.div1 {
+  --bg: rgba(255, 255, 255, 0.08); /* fond semi-transparent */
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 12px 18px 30px rgba(0, 0, 0, 0.35);
+
+  width: 90%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 14px;
+  
+
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  background-color: white;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+
+
+  color: black;
+  font-family: sans-serif;
+
+ display: flex;
+  flex-direction: column; /* aligne les éléments verticalement */
+ 
+  align-items: center; /* centre chaque div horizontalement */
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+   font-family: 'Pacifico', cursive;
+  font-size: 20px;
+
+  color: black;
+ 
+
+  
+}
+
+.imgemot {
+
+font-size: 100px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Chewy', cursive;
+  font-size: 48px;
+  
+  text-shadow:
+    -2px -2px 0 #fff,  
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff; /* contour blanc */
+}
+
+button {
+  background: linear-gradient(145deg, #ff7f50, #ff6347); /* couleurs type tomate / corail */
+  color: white;
+  font-family: 'Chewy', cursive; /* typographie gourmande */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 20%;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+  background: linear-gradient(145deg, #ff6347, #ff4500); /* un peu plus intense */
+}
+
+#questionnaire{
+  text-align: center;
+}
+
+#accueilWelcome {
+    font-family: 'Pacifico', cursive;
+     color: #F77F00;
+      text-shadow:
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+     
+}
+
+#name {
+  background: linear-gradient(145deg, #ffcc99, #ffb366); /* couleur douce type caramel */
+  color: #5a2e00; /* couleur texte marron foncé type chocolat */
+  font-family: 'Chewy', cursive;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#name:focus {
+  outline: none;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+  background: linear-gradient(145deg, #ffb366, #ff9933); /* plus intense au focus */
+}
